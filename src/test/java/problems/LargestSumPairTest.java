@@ -1,6 +1,9 @@
+package problems;
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
+
+import problems.LargestSumPair;
 
 public class LargestSumPairTest {
 

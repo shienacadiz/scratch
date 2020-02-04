@@ -1,3 +1,4 @@
+package problems;
 
 public class CyclicRotation {
 	public static int[] goRotate(int[] array, int cycle) {	
