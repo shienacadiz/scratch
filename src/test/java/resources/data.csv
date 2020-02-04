@@ -1,0 +1,6 @@
+Message Id;Body;Delivery Status
+1;"Hi there";"SUCCESS"
+2;"Please book appointment for the 1/2";"SUCCESS"
+3;"Emergency contact updated for your account";"UNDELIVERED"
+4;"You have a friend request from 'Pete'";"UNDELIVERED"
+5;"There is a new sign in attempt for your account.";"SUCCESS"
