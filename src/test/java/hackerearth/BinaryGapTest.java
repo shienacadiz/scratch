@@ -1,11 +1,17 @@
-package problems;
+package hackerearth;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
 
-import problems.BinaryGap;
+import hackerearth.BinaryGap;
 
 public class BinaryGapTest {
+	
+	@Test
+	public void testInstance() {
+		assertNotNull(new BinaryGap());
+	}
 
 	@Test
 	public void testConvertToBinary() {

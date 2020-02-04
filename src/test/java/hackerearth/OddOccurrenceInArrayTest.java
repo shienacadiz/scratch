@@ -1,14 +1,20 @@
-package problems;
+package hackerearth;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 import java.util.ArrayList;
 
 import org.junit.Test;
 
-import problems.OddOccurrenceInArray;
+import hackerearth.OddOccurrenceInArray;
 
 public class OddOccurrenceInArrayTest {
 
+	@Test
+	public void testInstance() {
+		assertNotNull(new OddOccurrenceInArray());
+	}
+	
 	@Test
 	public void testGetOddOccurrence() {
 		ArrayList<Integer> arr1 = new ArrayList<Integer>();

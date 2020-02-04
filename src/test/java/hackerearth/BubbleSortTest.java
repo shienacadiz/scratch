@@ -1,11 +1,17 @@
-package problems;
+package hackerearth;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
 
-import problems.BubbleSort;
+import hackerearth.BubbleSort;
 
 public class BubbleSortTest {
+	@Test
+	public void testInstance() {
+		assertNotNull(new BubbleSort());
+	}
+	
 	@Test
 	public void testPerformBubbleSort() {
 		int before[] = { 2, 5, -2, 6, -3, 8, 0, -7, -9, 4 };

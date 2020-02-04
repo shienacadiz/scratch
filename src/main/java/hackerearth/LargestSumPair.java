@@ -1,4 +1,4 @@
-package problems;
+package hackerearth;
 
 
 public class LargestSumPair {

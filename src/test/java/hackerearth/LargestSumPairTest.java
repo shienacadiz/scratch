@@ -1,12 +1,18 @@
-package problems;
+package hackerearth;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
 
-import problems.LargestSumPair;
+import hackerearth.LargestSumPair;
 
 public class LargestSumPairTest {
 
+	@Test
+	public void testInstance() {
+		assertNotNull(new LargestSumPair());
+	}
+	
 	@Test
 	public void testSolution() {
 		int[] num = {51, 71, 17, 42};

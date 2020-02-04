@@ -1,11 +1,23 @@
-package problems;
+package hackerearth;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
 
-import problems.CyclicRotation;
+import hackerearth.CyclicRotation;
 
 public class CyclicRotationTest {
+	
+	@Test
+	public void testInstance() {
+		assertNotNull(new CyclicRotation());
+	}
+	
+	@Test
+	public void testEmptyArray() {
+		int[] before = {};
+		assertEquals(0, CyclicRotation.goRotate(before, 3).length);
+	}
 	
 	@Test
 	public void testGoRotate1() {

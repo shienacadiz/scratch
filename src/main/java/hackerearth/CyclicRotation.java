@@ -1,4 +1,4 @@
-package problems;
+package hackerearth;
 
 public class CyclicRotation {
 	public static int[] goRotate(int[] array, int cycle) {	

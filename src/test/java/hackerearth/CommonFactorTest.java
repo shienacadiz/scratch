@@ -1,11 +1,18 @@
-package problems;
+package hackerearth;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
 
-import problems.CommonFactor;
+import hackerearth.CommonFactor;
 
 public class CommonFactorTest {
+	
+	@Test
+	public void testInstance() {
+		assertNotNull(new CommonFactor());
+	}
+	
 	@Test
 	public void getCommonFactorTest() {
 		assertEquals(2, CommonFactor.getCommonFactor(10, 15));

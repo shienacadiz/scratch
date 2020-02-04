@@ -1,11 +1,17 @@
-package problems;
+package hackerearth;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
 
-import problems.CountValidHours;
+import hackerearth.CountValidHours;
 
 public class CountValidHoursTest {
+	
+	@Test
+	public void testInstance() {
+		assertNotNull(new CountValidHours());
+	}
 	
 	@Test
 	public void testSolution() {

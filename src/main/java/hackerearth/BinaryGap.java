@@ -1,4 +1,4 @@
-package problems;
+package hackerearth;
 
 public class BinaryGap {
 
@@ -33,9 +33,4 @@ public class BinaryGap {
 		
 		return largestCount;
 	}
-	
-	
-    public int solution(int N) {
-        return getBinaryGap(convertToBinary(N));        
-    }
 }
