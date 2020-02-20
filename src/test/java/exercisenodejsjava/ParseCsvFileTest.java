@@ -13,8 +13,7 @@ public class ParseCsvFileTest {
 
 	@Test
 	public void TestAndPrintValidFile() throws IOException {
-		ClassLoader classLoader = getClass().getClassLoader();
-		File file = new File(classLoader.getResource("resources/data.csv").getFile());
+		File file = new File("src/test/java/resources/data.csv");
 		ParseCsvFile parseCsvFile = new ParseCsvFile(file);
 		parseCsvFile.printValues();
 		assertNotNull(parseCsvFile);
@@ -23,16 +22,14 @@ public class ParseCsvFileTest {
 	
 	@Test
 	public void TestEmptyFile() throws IOException {
-		ClassLoader classLoader = getClass().getClassLoader();
-		File file = new File(classLoader.getResource("resources/empty.csv").getFile());
+		File file = new File("src/test/java/resources/empty.csv");
 		ParseCsvFile parseCsvFile = new ParseCsvFile(file);
 		assertEquals(0, parseCsvFile.getCsvRows().size());
 	}
 	
 	@Test
 	public void TestWithInvalidDataInFile() throws IOException {
-		ClassLoader classLoader = getClass().getClassLoader();
-		File file = new File(classLoader.getResource("resources/withinvaliddata.csv").getFile());
+		File file = new File("src/test/java/resources/withinvaliddata.csv");
 		ParseCsvFile parseCsvFile = new ParseCsvFile(file);
 		assertNotNull(parseCsvFile);
 		assertEquals(4, parseCsvFile.getCsvRows().size());
