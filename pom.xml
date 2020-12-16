@@ -35,5 +35,15 @@
         <artifactId>de.huxhorn.sulky.ulid</artifactId>
         <version>8.2.0</version>
     </dependency>
+    <dependency>
+        <groupId>com.github.f4b6a3</groupId>
+        <artifactId>ulid-creator</artifactId>
+        <version>2.3.3</version>
+    </dependency>
+    <dependency>
+        <groupId>io.azam.ulidj</groupId>
+        <artifactId>ulidj</artifactId>
+        <version>1.0.0</version>
+    </dependency>
   </dependencies>
 </project>
