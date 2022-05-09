@@ -4,8 +4,6 @@ import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
 
-import hackerearth.CyclicRotation;
-
 public class CyclicRotationTest {
 	
 	@Test
