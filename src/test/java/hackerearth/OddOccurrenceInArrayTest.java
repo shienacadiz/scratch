@@ -6,8 +6,6 @@ import java.util.ArrayList;
 
 import org.junit.Test;
 
-import hackerearth.OddOccurrenceInArray;
-
 public class OddOccurrenceInArrayTest {
 
 	@Test
