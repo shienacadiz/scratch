@@ -6,19 +6,13 @@ import java.util.Set;
 public class NonRepeating {
     public static char getNonRepeating(String paramString) {
         char returnChar = '$';
-        Set validatedChars = new HashSet<>();
 
         char[] stringAsCharArray = paramString.toCharArray();
         for(char currentChar: stringAsCharArray) {
-            if(validatedChars.contains(currentChar)) {
-                continue;
-            }
             if(paramString.chars().filter(ch -> ch == currentChar).count() == 1) {
                 return currentChar;
             }
-            validatedChars.add(currentChar);
         }
-
         return returnChar;
     }
 

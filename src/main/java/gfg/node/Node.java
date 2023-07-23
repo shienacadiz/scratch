@@ -7,6 +7,8 @@ import java.util.Arrays;
 import java.util.List;
 
 class Node {
+
+    private static final String SPACE = " ";
     int data;
     Node next;
     Node(int key) {
@@ -15,7 +17,7 @@ class Node {
     }
 
     public static Node convertToNode(String line) {
-        List<String> nodeList = Arrays.asList(line.split(" "));
+        List<String> nodeList = Arrays.asList(line.split(SPACE));
         Node head = new Node(Integer.parseInt(nodeList.get(0)));
         Node tail = head;
         for(int ctr=1 ; ctr < nodeList.size() ; ctr++) {
@@ -31,6 +33,6 @@ class Node {
             nodeList.add(node.data);
             node = node.next;
         }
-        return StringUtils.join(nodeList, " ");
+        return StringUtils.join(nodeList, SPACE);
     }
 }
