@@ -8,6 +8,22 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
+/**
+ * Given a binary tree and the task is to find the spiral order traversal of the tree.
+ *
+ * Spiral order Traversal mean: Starting from level 0 for root node, for all the even levels we print the node's
+ * value from right to left and for all the odd levels we print the node's value from left to right.
+ *
+ * For below tree, function should return 1, 2, 3, 4, 5, 6, 7.
+ *
+ *         1
+ *       /   \
+ *      2     3
+ *    /  \  /  \
+ *   7   6 5   4
+ *
+ * https://practice.geeksforgeeks.org/problems/level-order-traversal-in-spiral-form/0
+ */
 public class TreeSpiral {
     private Map<Integer, List<TreeNode>> treeNodeMap = new HashMap<>();
     private ArrayList<Integer> spiralNodeList = new ArrayList<>();

@@ -1,8 +1,17 @@
 package gfg;
 
-import java.util.HashSet;
-import java.util.Set;
-
+/**
+ * Given a string S consisting of lowercase Latin Letters.
+ * Return the first non-repeating character in S. If there is no non-repeating character, return '$'.
+ *
+ * Input:
+ * S = zxvczbtxyzvy
+ * Output: c
+ * Explanation: In the given string, 'c' is
+ * the character which is non-repeating.
+ *
+ * https://practice.geeksforgeeks.org/problems/non-repeating-character-1587115620/0
+ */
 public class NonRepeating {
     public static char getNonRepeating(String paramString) {
         char returnChar = '$';
